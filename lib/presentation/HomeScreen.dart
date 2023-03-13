@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get/get.dart';
 import 'package:smart_ix/utils/AppAssets.dart';
 import 'package:smart_ix/utils/AppSpaces.dart';
 import 'package:smart_ix/widgets/buttons.dart';
@@ -21,6 +22,14 @@ class HomeScreen extends StatelessWidget {
     return BlocBuilder<HomeScreenBloc, HomeScreenState>(
       builder: (context, state) {
         return Scaffold(
+          appBar: AppBar(
+            centerTitle: true,
+            backgroundColor: Get.theme.colorScheme.secondary,
+            title: Text(
+              'Smart IX',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
           body: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(

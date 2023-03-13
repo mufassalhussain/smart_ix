@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         ],
         child: GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'HR Controller',
+          title: 'Smart IX',
           theme: ThemeData(
             useMaterial3: true,
             primarySwatch: Colors.blue,
